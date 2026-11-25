@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Отель Аквамарин — Озерковская набережная, 26, Москва</title>
+  <meta name="description" content="Отель Аквамарин by ZONT Hotel Group на Озерковской набережной, 26. Номера, ресторан, Аква-СПА и конференц-залы в Замоскворечье.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M4 22c4-7 8-7 12 0s8 7 16 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <div>
+        <strong>AQUAMARINE</strong>
+        <span>HOTEL</span>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#top">Главная</a>
+      <a href="#rooms">Номера</a>
+      <a href="#spa">Аква-СПА</a>
+      <a href="#events">Мероприятия</a>
+      <a href="#dining">Ресторан</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-tools">
+      <span class="lang">RU</span>
+      <a class="icon-btn" href="tel:+74955802828" aria-label="Позвонить: +7 495 580 28 28">☎</a>
+      <a class="book-pill" href="#book">Забронировать</a>
+      <button class="icon-btn" type="button" id="theme" aria-label="Ночная тема">☾</button>
+      <button class="icon-btn menu-btn" type="button" id="open-menu" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <button type="button" id="close-menu" aria-label="Закрыть">×</button>
+    <a href="#top">Главная</a>
+    <a href="#rooms">Номера</a>
+    <a href="#spa">Аква-СПА</a>
+    <a href="#events">Мероприятия</a>
+    <a href="#dining">Ресторан</a>
+    <a href="#contacts">Контакты</a>
+    <a href="#book">Забронировать</a>
+  </div>
+
+  <main id="top">
+    <section class="hero" style="background-image:url(images/hero.jpg)">
+      <div class="hero-copy">
+        <h1>Аквамарин — отель на набережной в Замоскворечье</h1>
+        <p>Отель Аквамарин by ZONT Hotel Group, 4*. Озерковская набережная, 26: номера, ресторан, Аква-СПА и залы для встреч. Метро «Новокузнецкая» — около 550 метров.</p>
+        <form class="finder" id="finder">
+          <label>Заезд<input type="date" name="in" required></label>
+          <label>Выезд<input type="date" name="out" required></label>
+          <label>Гости
+            <select name="guests">
+              <option>1</option>
+              <option selected>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </label>
+          <button type="submit">Найти номер</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Коротко об отеле">
+      <div>
+        <h2>Расположение</h2>
+        <ul>
+          <li>Озерковская набережная, 26, Замоскворечье</li>
+          <li>Метро «Новокузнецкая» — около 550 м</li>
+          <li>Третьяковская галерея — около 1 км</li>
+          <li>Павелецкий вокзал — около 1,2 км, аэроэкспресс в Домодедово</li>
+        </ul>
+      </div>
+      <div>
+        <h2>В распоряжении гостей</h2>
+        <ul>
+          <li>Аква-СПА: финская сауна и хамам</li>
+          <li>Ресторан и бар</li>
+          <li>Тренажёрный зал</li>
+          <li>Платная парковка и Wi-Fi</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Оценки</h2>
+        <p class="score">9,3<small>549 оценок на Tinkoff. На Ostrovok — 9,0 из 1 504 отзывов.</small></p>
+      </div>
+    </section>
+
+    <section class="section" id="rooms">
+      <div class="section-head">
+        <p class="kicker">Размещение</p>
+        <h2>Номера для комфортного отдыха</h2>
+      </div>
+      <div class="rooms">
+        <a class="room" href="#book">
+          <img src="images/standard.jpg" alt="Номер категории Стандарт">
+          <div><h3>Стандарт</h3><p>22 м² · одна или две кровати</p></div>
+        </a>
+        <a class="room" href="#book">
+          <img src="images/premium.jpg" alt="Номер категории Премиум">
+          <div><h3>Премиум</h3><p>22 м² · 7 этаж · клубная гостиная</p></div>
+        </a>
+        <a class="room" href="#book">
+          <img src="images/executive.jpg" alt="Представительский номер">
+          <div><h3>Представительский</h3><p>26 м² · 8 этаж · терраса</p></div>
+        </a>
+        <a class="room" href="#book">
+          <img src="images/business.jpg" alt="Бизнес-люкс">
+          <div><h3>Бизнес-люкс</h3><p>35 м² · две комнаты</p></div>
+        </a>
+        <a class="room" href="#book">
+          <img src="images/silver.jpg" alt="Серебряный люкс">
+          <div><h3>Серебряный люкс</h3><p>Анфилада комнат и терраса</p></div>
+        </a>
+        <a class="room" href="#book">
+          <img src="images/gold.jpg" alt="Золотой люкс">
+          <div><h3>Золотой люкс</h3><p>Самый большой номер · две террасы</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="panel">
+        <div>
+          <p class="kicker">Напрямую отелю</p>
+          <h2>Цену и свободные даты называет отдел бронирования</h2>
+          <p>На этой странице нет оплаты. Заявка уходит на почту reservations@zont-club.ru или по телефону +7 (499) 490 30 60. Ресепшен: +7 (495) 580 28 28.</p>
+          <p><a class="btn" href="tel:+74955802828" style="display:inline-grid;place-items:center">Позвонить</a></p>
+        </div>
+        <div class="cards">
+          <div class="mini"><b>159</b>номеров в доме</div>
+          <div class="mini"><b>15:00</b>заезд по карточкам отеля</div>
+          <div class="mini"><b>12:00</b>выезд</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="spa">
+      <div class="section-head">
+        <p class="kicker">Фирменные пространства</p>
+        <h2>То, ради чего останавливаются на набережной</h2>
+      </div>
+      <div class="spaces">
+        <a class="space" href="#spa">
+          <img src="images/spa.jpg" alt="Стойка Аква-СПА">
+          <div><h3>Аква-СПА</h3><p>Финская сауна, хамам и кабинеты для массажа.</p></div>
+        </a>
+        <a class="space" id="dining" href="#dining">
+          <img src="images/restaurant.jpg" alt="Летняя терраса ресторана">
+          <div><h3>Ресторан и бар</h3><p>Ресторан «Топаз» и бар. Русская, европейская и азиатская кухня.</p></div>
+        </a>
+        <a class="space" id="events" href="#events">
+          <img src="images/lounge.jpg" alt="Гостиная отеля">
+          <div><h3>Встречи и банкеты</h3><p>Конференц-залы и залы для праздников. Свадьбы — по запросу отдела продаж.</p></div>
+        </a>
+        <a class="space" href="#contacts">
+          <img src="images/reception.jpg" alt="Ресепшен отеля Аквамарин">
+          <div><h3>Ресепшен круглосуточно</h3><p>Стойка работает всю ночь. Камера хранения — на ресепшене.</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="offers">
+      <div class="section-head">
+        <p class="kicker">В отеле</p>
+        <h2>Больше, чем ночь в номере</h2>
+      </div>
+      <div class="offers">
+        <article class="offer">
+          <img src="images/rooms-intro.jpg" alt="Сервировка в номере">
+          <div><h3>Завтрак</h3><p>Завтрак сервируют в отеле. Можно заказать в номер.</p></div>
+        </article>
+        <article class="offer">
+          <img src="images/spa.jpg" alt="Аква-СПА">
+          <div><h3>Спа и зал</h3><p>Сауна, хамам, массаж и тренажёрный зал для гостей.</p></div>
+        </article>
+        <article class="offer">
+          <img src="images/corridor.jpg" alt="Коридор жилого этажа">
+          <div><h3>Деловая поездка</h3><p>Номера с рабочим столом и доступ в клубную гостиную у категорий Премиум и выше.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <div class="section-head">
+        <p class="kicker">Как добраться</p>
+        <h2>Мы здесь</h2>
+      </div>
+      <div class="map-grid">
+        <div>
+          <p><strong>115184, Москва, Озерковская набережная, 26</strong></p>
+          <ul>
+            <li>Новокузнецкая — около 550 м</li>
+            <li>Третьяковская — около 700 м</li>
+            <li>Павелецкий вокзал — около 1,2 км</li>
+            <li>Кремль и Красная площадь — около 2 км</li>
+            <li>Парк Горького — около 2,6 км</li>
+          </ul>
+          <p>Парковка на территории платная с 6 августа 2024 года. Первые 15 минут бесплатно. Для гостей отеля и ресторана: час — 300 ₽, бизнес-день или сутки — 1 000 ₽.</p>
+          <p><a href="https://www.openstreetmap.org/directions?to=55.73936%2C37.63673" target="_blank" rel="noopener">Маршрут в карте ↗</a></p>
+        </div>
+        <iframe class="map" title="Карта отеля Аквамарин" src="https://www.openstreetmap.org/export/embed.html?bbox=37.628%2C55.735%2C37.646%2C55.744&amp;layer=mapnik&amp;marker=55.7393638%2C37.6367330"></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <p class="kicker">Вопросы и ответы</p>
+        <h2>Спрашивают перед поездкой</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Когда заезд и выезд?</summary>
+          <p>По карточкам отеля заезд с 15:00, выезд до 12:00. Ранний заезд и поздний выезд подтверждает ресепшен, если номер свободен.</p>
+        </details>
+        <details>
+          <summary>Есть ли парковка и Wi-Fi?</summary>
+          <p>Wi-Fi есть в отеле. Парковка на территории платная: первые 15 минут бесплатно, далее по тарифу отеля.</p>
+        </details>
+        <details>
+          <summary>Что есть кроме номера?</summary>
+          <p>Аква-СПА с финской сауной и хамамом, тренажёрный зал, ресторан, бар, конференц-залы. Номера для некурящих, лифт, круглосуточная стойка.</p>
+        </details>
+        <details>
+          <summary>Как оплатить?</summary>
+          <p>Этот сайт оплату не принимает. Свободные даты и счёт называет отдел бронирования: +7 (499) 490 30 60, reservations@zont-club.ru.</p>
+        </details>
+        <details>
+          <summary>Можно ли с животными?</summary>
+          <p>Условия проживания с животными лучше спросить на ресепшене до заезда. На странице отеля отдельного правила в открытом виде нет.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="section-head">
+        <p class="kicker">Контакты</p>
+        <h2>Ответим на любой вопрос</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <p>Ресепшен<br><a href="tel:+74955802828">+7 (495) 580 28 28</a><br><a href="mailto:welcome@cpmsk.ru">welcome@cpmsk.ru</a></p>
+          <p>Отдел бронирования<br><a href="tel:+74994903060">+7 (499) 490 30 60</a><br><a href="mailto:reservations@zont-club.ru">reservations@zont-club.ru</a></p>
+          <p>Отдел продаж<br><a href="mailto:sales@cpmsk.ru">sales@cpmsk.ru</a></p>
+          <p>Официальный сайт: <a href="https://www.aquamarinehotel.ru/" target="_blank" rel="noopener">aquamarinehotel.ru</a></p>
+        </div>
+        <form class="form" id="book">
+          <label>Имя<input name="name" required></label>
+          <label>Телефон<input name="phone" required></label>
+          <label class="wide">Email, необязательно<input name="email" type="email"></label>
+          <label>Заезд<input name="in" type="date" required></label>
+          <label>Выезд<input name="out" type="date" required></label>
+          <label>Гостей<input name="guests" type="number" min="1" max="4" value="2"></label>
+          <label>Номер
+            <select name="room">
+              <option>Стандарт</option>
+              <option>Премиум</option>
+              <option>Представительский</option>
+              <option>Бизнес-люкс</option>
+              <option>Серебряный люкс</option>
+              <option>Золотой люкс</option>
+            </select>
+          </label>
+          <label class="wide">Пожелания<textarea name="note" rows="3"></textarea></label>
+          <div><button type="submit">Отправить заявку</button></div>
+          <p class="status" id="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <strong>Отель Аквамарин by ZONT Hotel Group</strong>
+        <p>Москва, Озерковская набережная, 26</p>
+      </div>
+      <p><a href="tel:+74955802828">+7 (495) 580 28 28</a></p>
+      <p><a href="https://www.aquamarinehotel.ru/" target="_blank" rel="noopener">aquamarinehotel.ru</a></p>
+    </div>
+    <p class="credit">Сайт разработан: <a href="https://aibek-32f39.web.app/" target="_blank" rel="noopener">https://aibek-32f39.web.app/</a></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
